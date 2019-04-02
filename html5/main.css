@@ -1,0 +1,41 @@
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    background: #000000
+}
+
+article{
+    padding: 10px;
+    font-family: verdana;
+    font-size: 17px;
+}
+
+main {
+    height: 500px;
+
+}
+
+nav {
+    background: #333;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+nav a{
+    float: right;
+    color: #fff;
+    padding: 16px 10px 16px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: bisque;
+    color: #000000;
+
+}
