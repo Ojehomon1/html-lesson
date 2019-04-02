@@ -1,0 +1,127 @@
+p {
+    color:black;
+    font-size:19px;
+    font-weight: 
+}
+body {
+    background-color:white;
+}
+
+/*background-color- Comment in CSS */ 
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+#javascript img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+#javascript{
+    text-align: left;
+    float:right;
+    color: purple;
+    font-size: 16px;
+    font-family: serif;
+}
+
+#javascript2 img {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-right: 10px;
+}
+
+#javascript2{
+    text-align: left;
+    float:right;
+    color: orange;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+  table, th, td{
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.mytable {
+  border: 2px solid blue;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.mytable th, .mytable td{
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    width: 20%
+
+}
+.article {
+    width: 600px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px
+
+}
+
+.article td{
+    border: none;
+
+}
+
+#picturechange img {
+    width: 100%;
+    height: auto;
+
+}
+
+.responsive-h1 {
+  font-size: 5vw;
+}
+
+.left {
+    background-color: lightblue;
+    padding: 20px 0px 20px 0px;
+    width: 20%;
+    float: left;
+}
+
+.main {
+    background-color: lightgreen;
+    padding: 20px 0px 20px 0px;
+    width: 60%;
+    float: left;
+}
+
+.right {
+    background-color: orange;
+    padding: 20px 0px 20px 0px;
+    width: 20%;
+    float: left;
+}
+
+@media screen and (max-width:600px) and (min-width:300px) {
+
+.left, .main, .right {
+    width: 100%;
+    color: green;
+    border: 2px solid green;
+    border-radius: 20px;
+    text-align: center;
+    background: lightcoral;
+
+}
+
+}.left {
+    background-color: yellow;
+}
+
+body {
+    background: lightpink;
+}
+
