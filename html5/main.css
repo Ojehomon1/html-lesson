@@ -6,7 +6,9 @@ header {
 }
 
 footer {
-    background: #000000
+    background: #000000;
+    color: white;
+    text-align: center;
 }
 
 article{
@@ -14,20 +16,18 @@ article{
     font-family: verdana;
     font-size: 17px;
 }
-
-main {
-    height: 500px;
-
-}
+ 
 
 nav {
-    background: #333;
+    background: #808080;
     border: 1px solid black;
     overflow: hidden;
+    text-align: center;
+
 }
 
 nav a{
-    float: right;
+    display: inline-block;
     color: #fff;
     padding: 16px 10px 16px 10px;
     text-decoration: none;
@@ -38,4 +38,13 @@ nav a:hover {
     background-color: bisque;
     color: #000000;
 
+}
+
+@media screen and (max-width:600px) { 
+   nav a {
+        width: 100%;
+        display: block;
+        
+   }
+    
 }
