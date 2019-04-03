@@ -111,6 +111,9 @@ body {
       article {
           width: 60%;
       }
+      #logo2 {
+          vertical-align: middle;
+      }
 
     aside {
         width: 40%;
