@@ -64,7 +64,7 @@ body {
 
     header {
         width: 100%;
-        border: 1px solid darkgoldenrod;
+        /* border: 1px solid darkgoldenrod; */
         position: relative;
 
         
@@ -120,7 +120,7 @@ body {
         width: 35%;
         color: white;
         background-color: #706b64;
-        border: 1px solid #333;
+        /* border: 1px solid #333; */
         border-radius: 15px;
         box-shadow: 0px 2px 5px#1c1a19;
     }
@@ -170,7 +170,7 @@ body {
         font-weight: normal;
     }
     #my_pictures img {
-        border: 1px solid black;
+        /* border: 1px solid black; */
         
     }
 
@@ -227,7 +227,7 @@ body {
             text-align: center;
         }
       
-        nav a, aside, article, #my_friends, #my_pictures, #tweet, my_friends ul{
+        nav a, aside, article, #my_friends, #my_pictures, #tweet, #my_friends ul li{
             display: block;
             width: 100%;
         }
@@ -237,6 +237,18 @@ body {
         #main title {
             width: 100%;
             text-align: center;
+        }
+           
+      #banner_image {
+          background-position: center center;
+      }  
+
+      #banner_description {
+          height: auto;
+      }
+        .red button {
+            position: rlative;
+            display: inline-block; 
         }
     }
 
