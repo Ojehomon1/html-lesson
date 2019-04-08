@@ -17,17 +17,83 @@
 }
 
 .styling2 {
+    color:rgb(122, 12, 144);
     font-size: 3em;
     background-color: rgba(33,22,122,0.5);
-    border:0.1em dashed rgba(122,255,0, 0.3)
+    border:20px solid rgba(122,255,0, 0.3);
+    display: block;
+    width: 300px;
+    /*padding-left:50px;
+    padding-right:50px;*/
+    box-sizing: border-box;
+    
 }
 
 .styling2:hover {
     color:rgb(122,12,144);
     background-color: red;
     font-size: 3.4em;
+    width: 100px;
+    padding: 100px;
+    margin: 100px;
+
 }
 
 body {
     background-color: rgba(255, 233, 0, 0.5);
 }
+
+img {
+  
+}
+.main{
+    height: 200px; 
+    width: 600px;
+    background-color: rgb(33, 22, 122,0.3);
+    border:1px solid rgba(33,22,122,1);
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding:40px;
+
+    padding: 0px 10 px 70px 20px;
+    /* padding: top right bottom left; */
+
+    margin-top:100px;
+    margin-right:150;
+    margin-bottom: 200px;
+    margin-left: 90px;
+    margin: 0px 10px 70px 20px;
+    /* margin: top right bottom left */
+    margin: 0 auto;
+
+    
+
+    
+}
+.main div{
+    float: left;
+    border: 2px solid rgb(16, 13 41);
+    width:200px;
+    height: 150px;
+    padding:40px;
+    box-sizing: border-box;
+    
+
+}
+.div1 {
+    background-color:aqua;
+    border: 10px solid black;
+}
+
+.div2 {
+    background-color: lightgreen;
+  border: 10px solid black;
+}
+
+.div3 {
+    background-color: darkgoldenrod;
+    border: 10px solid black;
+}
+
