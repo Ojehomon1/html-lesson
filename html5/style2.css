@@ -247,7 +247,7 @@ body {
           height: auto;
       }
         .red button {
-            position: rlative;
+            position: relative;
             display: inline-block; 
         }
     }
