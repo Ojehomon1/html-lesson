@@ -1,11 +1,33 @@
 .styling {
-    color:#210202;
+    
+    /* color 0123456789abcdef  */
+    color:#ff0000;
+    color: #00ff00;
+    color: #0000ff;
     font-size: 5em;
-    background-color: aqua;
+    /*background-color: aqua;*/
 
 }
 
-.styling {
-    font-size: 2.2em;
-    color: rgb(214, 137, 12);
+.styling1 {
+    font-size: 4em;
+    color: rgb(60,198,121);
+    /*background-color: rgb(0, 255, 106);*/
+    border:2px solid white;
+}
+
+.styling2 {
+    font-size: 3em;
+    background-color: rgba(33,22,122,0.5);
+    border:0.1em dashed rgba(122,255,0, 0.3)
+}
+
+.styling2:hover {
+    color:rgb(122,12,144);
+    background-color: red;
+    font-size: 3.4em;
+}
+
+body {
+    background-color: rgba(255, 233, 0, 0.5);
 }
