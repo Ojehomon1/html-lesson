@@ -33,9 +33,9 @@
     color:rgb(122,12,144);
     background-color: red;
     font-size: 3.4em;
-    width: 100px;
-    padding: 100px;
-    margin: 100px;
+    /*padding: 100px;
+    margin: 100px;*/
+    box-sizing: border-box;
 
 }
 
@@ -44,8 +44,11 @@ body {
 }
 
 img {
-  
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: block;
 }
+
 .main{
     height: 200px; 
     width: 600px;
