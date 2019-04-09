@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0 auto;
 }
@@ -11,7 +14,7 @@ body{
 .nav{
     background-color: #768484;
     display: flex;
-    /* justify-content: center */
+    justify-content: center 
 }
 
 .nav a{
@@ -36,6 +39,20 @@ body{
 
 .side{
     background-color: #c9dbcc;
+    flex:30%;
+    padding: 20px;
+}
+
+.main{
+    flex:70%;
+    padding: 20px;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
 }
 
 .footer{
@@ -44,4 +61,44 @@ body{
     background: rgba(255, 248, 221, 0.9);
     color: rgb(99, 79, 0);
 
+}
+@media screen and (max-width:700px) {
+    .row, .nav{
+        flex-direction: column;
+    }
+}
+
+#photo-of-us{
+    background-image: url("images/lionking.jpg");
+    background-position: center center;
+    background-size: cover;
+
+}
+#herbst{
+    background-image: url("images/herbst.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#rose{
+    background-image: url("images/rose.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#fantasy{
+    background-image: url("images/fantasy.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#background {
+    background-image: url("images/background.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#morecontent {
+    background-image: url("images/sunset.jpg");
+    background-position: center center;
+    background-size: cover;
 }
