@@ -10,6 +10,9 @@ body{
     text-align: center;
     background-color: rgba(255, 248, 221, 0.9);
     color: rgb(99, 79, 0);
+    /* background-image:url();
+    background-size: 100%;
+    background-reapeat: no-repeat; */
 }
 .nav{
     background-color: #768484;
@@ -66,48 +69,34 @@ body{
     .row, .nav{
         flex-direction: column;
     }
-}
-
-/* #photo-of-us{
-    background-image: url("images/lionking.jpg");
-    background-position: center center;
-    background-size: cover;
 
 }
-#herbst{
-    background-image: url("images/herbst.jpg");
-    background-position: center center;
-    background-size: cover;
-}
-
-#rose{
-    background-image: url("images/rose.jpg");
-    background-position: center center;
-    background-size: cover;
-}
-
-#fantasy{
-    background-image: url("images/fantasy.jpg");
-    background-position: center center;
-    background-size: cover;
-}
-#background {
-    background-image: url("images/background.jpg");
-    background-position: center center;
-    background-size: cover;
-}
-
-#morecontent {
-    background-image: url("images/sunset.jpg");
-    background-position: center center;
-    background-size: cover;
-} */
-
 .rowing{
     display:flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+    -ms-flex-wrap:wrap;
+
 }
 
 .rowing img{
     flex:25%;
+    margin-top: 8px;
+    vertical-align: middle;
+
 }
+
+@media screen and (max-width:600px) {
+    .rowing img {
+        flex:100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .rowing img{
+        flex: 50%;
+        max-width: 50%;
+    }
+}   
+
