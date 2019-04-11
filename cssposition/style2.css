@@ -1,0 +1,47 @@
+.chessboard
+{
+    border: 2px solid black;
+    width:800px;
+    height:800px;
+
+}
+.row{
+    position:relative;
+    height:100px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    width:100px;
+    height:100px;
+    position:absolute;
+
+}
+
+.B1{
+    left:100px;
+}
+.B2{
+    left:300px;
+}
+.B3{
+    left:500px;
+}
+.B4{
+    left:700px;
+}
+
+.A2{
+    left:200px;
+}
+
+.A3{
+    left:400px;
+}
+
+.A4{
+    left:600px;
+}
+
+

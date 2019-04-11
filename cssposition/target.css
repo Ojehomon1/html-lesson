@@ -1,0 +1,28 @@
+div{
+    padding:2px;
+    border:2px solid black;
+    position:absolute;
+    height:200px;
+
+}
+.behind{
+    width:150px;
+    background:red;
+    z-index:1;
+
+}
+.above{
+    width:100px;
+    background:green;
+    z-index:2;
+}
+.middle{
+    width:80px;
+    background:yellow;
+    z-index:3;
+}
+.boss{
+    width:50px;
+    background:pink;
+    z-index:4;
+}
