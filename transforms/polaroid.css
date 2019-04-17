@@ -1,0 +1,44 @@
+body{
+    background-color:white;
+}
+div{
+    width:250px;
+    height:250px;
+    border:1px solid black;
+    background: white;
+    transition: 5s;
+   
+}
+#id1:hover{
+    transform:rotate(-20deg);
+
+    }
+#id2:hover{
+        transform:rotate(-20deg);
+    
+        }
+#id3:hover{
+            transform:rotate(-20deg);
+        
+            }
+img {
+    margin: 25px;
+   
+}
+
+p{
+    margin: 20px;
+    text-align:center;
+}
+
+    #id1 {
+    transform:rotate(25deg);
+}
+#id2{
+    transform: rotate(-25deg);
+}
+#id3{
+    transform:rotate(25deg);
+}
+
+

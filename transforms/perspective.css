@@ -1,0 +1,29 @@
+div{
+    width:300px;
+    height:300px;
+    background:red;
+    color:white;
+    margin:50px;
+    font-size:40px;
+    /* transform: rotateX(180deg); */
+    transform:rotateY(180deg);
+
+}
+
+.room{ 
+    width:300px;
+    height:3oopx;
+    border:3px solid black;
+    margin:50px;
+    perspective: 100px;
+}
+
+.object{
+    width:300px;
+    height:300px;
+    background:red;
+    color:white;
+    font-size:40px;
+    /* transform: rotateX(180deg); */
+    transform: rotateZ(-200px);
+}
