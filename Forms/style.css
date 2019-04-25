@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    width:70%;
+    margin: 0 auto;
+    background-image:linear-gradient(to right bottom,rgba(174, 36, 179, 0.8),
+    rgba(127, 216, 228, 0.8));
+}
+
+.container label {
+    display:inline-block;
+    border:1px solid red;
+    text-align: left;
+    width:60%,
+}
+
+p {
+    border:0px solid green;
+}
+
+.container input,textarea {
+    width:60%;
+}
+
+@media only screen and (max-width:600px) {
+    .container,input,textarea {
+        width:100%;
+    }
+}
