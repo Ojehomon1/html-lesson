@@ -26,8 +26,12 @@ p {
     box-sizing: border-box;
     padding: 10px;
     
-
 }
+/* .container input:not([type="checkbox"]),textarea,select {
+    border-radius:20px;
+    width:60%;
+    box-sizing: border-box;
+    padding: 10px; } */
 
 .container input[type="submit"] {
     font-size:1.2em;
