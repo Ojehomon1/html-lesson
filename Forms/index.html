@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <!-- <div class="main">
         <form action="process.html">
             First Name:
             <input type="text" name="f-name" id="">
@@ -31,19 +31,38 @@
             <input type="reset" name="" id="">
 
         </form>
-    </div>
+    </div> -->
     <div class="container">
         <h1>Contact Form</h1>
         <p>please fill the form to send a message to us</p>
 
-        <form action="">
+        <form action="" method="POST">
             <p>
                 <label for="Name">Name</label>
-                <input type="text" name="fullname">
+                <input required="required" placeholder="enter your name" type="text" name="fullname">
             </p>
             <p>
-                <label for="">Email Address</label>
-                <input type="email">
+                <label for="email">Email Address</label>
+                <input required="required" placeholder="enter your email" type="email">
+            </p>
+            <p>
+                <label for="date">Date of Birth</label>
+                <input type="date" name=" id=">
+            </p>
+            <p>
+                <label class="label-gender" for="gender">Gender</label>
+                <input class="radio" type="radio" name="gender" id="" value="m"><span>Male</span>
+                <input class="radio" type="radio" name="gender" id="" value="f"> <span>Female</span>
+                <input class="radio" type="radio" name="gender" id="" value="o"> <span>Other</span>
+            </p>
+            <p>
+                <label for="">Your Location</label>
+                <select name="location" id="location">
+                    <option value="1">Berlin</option>
+                    <option value="2" selected="selected">Hamburg</option>
+                    <option value="3">Düsseldorf</option>
+                    <option value="4">Köln</option>
+                </select>
             </p>
             <p>
                 <label for="">Message</label>
