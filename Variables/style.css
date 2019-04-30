@@ -1,0 +1,11 @@
+:root {
+    --txtcolor:rgba(233,44,66,0.6);
+    --bgcolor:linear-gradient(to right,lightblue,lightgreen);
+}
+body {
+    background-image: var(--bgcolor)
+}
+.main h1 {
+    color:var(--txtcolor);
+    
+}
