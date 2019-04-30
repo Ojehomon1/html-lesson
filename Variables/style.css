@@ -60,6 +60,7 @@ body {
 
 .btn:hover {
     background-color:var(--color,black);
+
 }
 .btn.red {
     --color:pink;
@@ -72,6 +73,7 @@ body {
 }
 .red {
     background:red;
+   
 }
 .blue {
     background:blue;
