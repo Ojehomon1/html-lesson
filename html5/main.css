@@ -48,3 +48,17 @@ nav a:hover {
    }
     
 }
+.bw {
+    font-family: 'Black And White Picture', sans-serif;
+    color:blue
+}
+
+.js {
+    font-family: 'Pacifico', cursive;
+    color:red;
+}
+
+.node {
+    font-family: 'Source Code Pro', monospace;
+    color:greenyellow;
+}
