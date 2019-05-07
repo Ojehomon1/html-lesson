@@ -19,4 +19,6 @@ p {
     text-align:center;
     padding:20px;
 }
-.class= w3-hover-black w3-card-4 w3-panel w3-green">
+
+.w3-akronim {
+    font-family: 'Akronim', cursive;
