@@ -1,0 +1,73 @@
+$font-arial: Arial, Helvetica, sans-serif;
+$font-huge:'Times New Roman', Times, serif;
+$font-franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$font-basic-size: 1rem;
+$color-blue: blue;
+$color-purple: purple;
+$color-green: green;
+$height-ten: 10rem;
+$back-g-color: rgba(255, 255, 0, 0.39);
+$txt-al: center;
+
+html {
+    body {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }    
+}
+header {
+    height: $height-ten;
+    background-color:$back-g-color;
+    text-align: $txt-al;
+    padding-top: 2rem;
+    font-family: $font-arial;
+    h1 {
+        font-family: $font-arial;
+    }
+}
+main {
+    margin:5rem;
+   .huge {
+       font-family: $font-huge;
+       font-size: $font-basic-size*10;
+       color: $color-blue;
+   }
+   .big {
+       font-family: $font-huge;
+       font-size: $font-basic-size*8;
+       color: $color-blue;
+   }
+   .medium {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        font-size: $font-basic-size*3;
+        color: $color-purple;
+   }
+   .middle {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $font-basic-size*3;
+        color: $color-purple;
+   }
+   .small {
+        font-family: $font-franklin;
+        font-size: $font-basic-size*2;
+        color: $color-green;
+   }
+   .tiny {
+        font-family: $font-franklin;
+        font-size: $font-basic-size*5;
+        color: green;
+        margin-bottom: 2rem;
+   }
+
+}
+
+footer {
+    height: $height-ten;
+    background-color: $back-g-color;
+    text-align: $txt-al;
+    font-family: $font-arial;
+    padding-top: 1rem;
+}
+
