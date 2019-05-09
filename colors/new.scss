@@ -1,0 +1,33 @@
+.container {
+    border: 1px solid black;
+    width:200px;
+    height:200px;
+    display:flex;
+    align-items:center;
+    /* flex-wrap:wrap* used to spread the background-color over the container*/
+    flex-wrap:wrap; 
+    div {
+        width: 33%;
+        height:80%;
+    }
+}
+@mixin colormix($color) {
+    div:nth-child(1) {
+        background-color:darken($color,20%); 
+    }
+    div:nth-child(2) {
+        background-color:($color); 
+    }
+    div:nth-child(3) {
+        background-color:lighten($color,20%); 
+    }
+}
+.yellow {
+@include colormix(yellow);
+}
+.red {
+@include colormix(red);
+}
+.green {
+@include colormix(green);
+}
