@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 29%, #bce0ee 100%); /* FF3.6-15 */
+    background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%); /* FF3.6-15 */
+    font-family: 'Lobster', cursive;
+    font-size:1.4em;
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+nav ul{
+   text-align: center;
+   list-style-type:none ;
+   
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 16px;
+    font-size:1em;
+    font-weight: 700;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.cards{
+    margin-top:40px;
+    display: flex;
+    text-align: center;
+}
+.card {
+ border:2px solid #444;
+ border-radius:25px;
+ flex:33.3%;
+ padding: 20px;
+ margin:20px;
+ box-shadow: 9px 6px 19px 7px #444;
+}
+.card p{
+    text-align: center;
+    
+}
+
+.card button {
+    cursor: pointer;
+}
+
+.card p:hover {
+    color: tomato,
+    
+}
+.portion{
+    display: flex;
+    align-items: center;
+    
+}
+.portion img{
+ width:20vw;
+  
+}
+.portion article{
+    text-align: justify;
+}
+
+aside,section{
+    padding-left:35px;
+   
+    text-align: justify;
+}
+footer{
+    padding-top:50px;
+    padding-bottom:50px; 
+}
+footer ul{
+    text-align: center;
+    list-style-type:none ;    
+ }
+ footer ul li{
+     display: inline-block;
+ }
+ footer ul li a{
+     text-decoration: none;
+     padding: 16px;
+     font-size:1em;
+     font-weight: 700;
+     font-family: 'Libre Franklin', sans-serif;
+ }
+ footer a,nav a{
+     color:rgb(230, 220, 220);
+     font-size: 1.8em;
+ }
+
+Variables Exercise - 2
+
+Task 1 Position the elements as seen in the pictures. Add padding, margins etc where needed. Design for mobile first and then desktop. Breakpoint: 600px.
+
+Task 2 Style the cards with a border, and style the buttons in the cards.
+
+Task 3 Add the finishing touches to the page - add color, fonts and font-sizes!
+
+Create variables for at least 3 different colors. Create variables for at least 2 different font-stacks. Create variables for at least 2 different font sizes (heading elements and paragraph elements).
+
+Use the variables throughout your page.
