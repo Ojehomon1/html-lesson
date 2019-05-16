@@ -66,16 +66,16 @@ $breakpoints: (
     // @include phone();
     // @include tablet();
     // @include desktop();
-    @include for-size('phone') {
+    @include for-size("phone") {
         column-count: 1;
     }
-    @include for-size('tablet') {
+    @include for-size("tablet") {
         column-count: 2;
     }
-    @include for-size('desktop') {
+    @include for-size("desktop") {
         column-count: 3;
     }
-
+}
 // @media (min-width:300px){
 //     .header-title{
 //         column-count: 1;
@@ -107,3 +107,18 @@ $breakpoints: (
 //     }
 //  }
   
+$breakpoints-2: (
+   1: 300px,
+   2: 600px,
+   3: 900px
+);
+
+@mixin for-size-all {
+    @for $i from 1 through 3 {
+        @media (min-width: #{map-get($breakpoints-2, $i)}) {
+            column-count: $i;
+            border: $i*10+px solid hsl($i*10, 100%, 64%);
+        }
+        
+    }
+ }

@@ -12,8 +12,14 @@
   }
 }
 
-.header-title {
-  font-size: 2rem;
+@media (min-width: 600px) {
+  .header-title {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .header-title:before {
+    content: "tablet";
+  }
 }
 
 @media (min-width: 900px) {
@@ -23,7 +29,6 @@
   }
   .header-title:before {
     content: "desktop";
-    color: purple;
   }
 }
 /*# sourceMappingURL=media.css.map */
