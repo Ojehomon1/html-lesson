@@ -1,7 +1,11 @@
-.jumbotron{
-    background-image:url(skyline.jpg);
-    background-size:cover;
-    /* background-position: */
+body {
+  position: relative;
 }
 
-/* No CSS *//*# sourceMappingURL=hilltop.css.map */
+.jumbotron {
+  background-image: url(skyline.jpg);
+  background-size: cover;
+  width: 100%;
+  /* background-position: */
+}
+/*# sourceMappingURL=hilltop.css.map */
