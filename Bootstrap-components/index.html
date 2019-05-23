@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
       <div class="container-fluid">
-          <div class="row">
-              <div class="col-12 col-md-4">
+          <div class="row justify-content-center">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 border border-info rounded mt-5 p-5 shadow-lg">
                 <form>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email address</label>
@@ -27,11 +28,74 @@
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input  type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+                    </div>
+                   
+                    <div class="form-group">
+                      <label for="countries">Select your Country</label>
+                      <select id="countries" class="custom-select">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Germany</option>
+                        <option value="2">USA</option>
+                        <option value="3">UK</option>
+                        <option value="3">Canada</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="countries">Select your Country</label>
+                        <select id="countries" class="form-control" multiple>
+                          <option selected>Open this select menu</option>
+                          <option value="1">Germany</option>
+                          <option value="2">USA</option>
+                          <option value="3">UK</option>
+                          <option value="3">Canada</option>
+                        </select>
+                      </div>
+                      <div class="custom-file mb-4">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Please select a file</label>
+                        </div>
+                    <button  type="submit" class="btn btn-block btn-primary">Submit</button>
                   </form>
               </div>
           </div>
       </div>
+      <form>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+            <div class="col-sm-8">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+        </form>
+        <div class="container fluid">
+            <form>
+                <div class="row">
+                  <div class="col-3">
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col-9">
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+              </form>
+        </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
