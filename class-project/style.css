@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  position: relative;
+}
+
+.jumbotron {
+  background-image: url(images/bgimage2.jpg);
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  /* background-position: */
+}
+/*# sourceMappingURL=style.css.map */
