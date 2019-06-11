@@ -1,0 +1,56 @@
+.title {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: blue;
+  color: red;
+}
+
+.text {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.light-text {
+  background-color: green;
+  font-size: 2.2em;
+}
+
+.light-text:hover {
+  background-color: #00e600;
+}
+
+.htext {
+  text-transform: uppercase;
+  color: green;
+  font-size: 2em;
+  text-align: center;
+  border: 2px dotted purple;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(orange), to(pink));
+  background-image: linear-gradient(to right, orange, pink);
+}
+
+.content {
+  text-transform: uppercase;
+  color: orange;
+  font-size: 1.8em;
+  text-align: left;
+  border: 2px dotted purple;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, left top, right top, from(orange), to(pink));
+  background-image: linear-gradient(to right, orange, pink);
+}
+
+.light-text {
+  background-color: lightblue;
+  font-size: 2.2em;
+}
+
+body {
+  background-image: -webkit-gradient(linear, right top, left top, from(orange), to(pink));
+  background-image: linear-gradient(right, orange, pink);
+}
+/*# sourceMappingURL=main.css.map */

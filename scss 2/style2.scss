@@ -1,0 +1,67 @@
+$maincolor:#444;
+$secondcolor:lightblue;
+
+$mainfont-family:"Libre Franklin", sans-serif;
+$secondfont-family:'Lobster', cursive;
+
+$background1:linear-gradient(top,#1e5799 0% #2989d8 50%,
+#207cca 51%;
+#7db9e8 100%;
+
+// $background2:linear-gradient(top,#1e5799 0% #2989d8 50%,
+
+
+
+header {
+  text-align:$text-center;
+  padding: 20px;
+  
+}
+nav {
+    ul {
+        text-align:$text-center;
+        list-style-type: none;
+    }
+    li {
+        display:inline-block;
+    }
+    a {
+        text-decoration: none;
+        padding: 16px;
+        font-weight: 700;
+        font-family: $secondfont-family;
+        color:$link-color1;
+    }
+}
+
+main {
+    .cards {
+        margin-top:40px;
+        display:flex;
+        text-align: $text-center;
+
+        card {
+            border: 1px solid #444;
+            border-radius:25px;
+            flex:33.3%;
+            padding:20px;
+            margin:20px;
+            box-shadow:$box-shadow;
+        }
+
+        p{
+            text-align:$text-center;
+            font-size:$fonttext;
+        
+        }
+        p:hover {
+            color:tomato;
+        }
+
+        button {
+            
+        }
+    }
+
+}
+

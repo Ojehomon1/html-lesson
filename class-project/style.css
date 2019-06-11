@@ -42,3 +42,68 @@ body {
   background-image: url(images/crpics4.jpg);
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+.jumbotron2 {
+  background-image: url(images/bgimage6.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  margin: 0;
+
+}
+.nigerian-banner2 h1{
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 80px;
+  color: white;
+}
+.lead2 {
+  color: white;
+  font-weight: bold;
+  
+}
+
+.imgWrap2 {
+  height: 80vw;
+  width: 100vw;
+  background-position: center center;
+  background-size: cover;
+}
+
+#foodimg1 {
+  background-image: url(images/ngfood1.jpeg);
+}
+
+#foodimg2 {
+  background-image: url(images/ngfood2.jpg);
+}
+
+#foodimg3 {
+  background-image: url(images/ngfood3.jpg);
+}
+#foodimg4 {
+  background-image: url(images/ngfood4.jpg);
+}
+
+#foodimg5 {
+  background-image: url(images/ngfood5.jpg);
+}
+
+#foodimg6 {
+  background-image: url(images/ngfood6.jpeg);
+}
+
+#foodimg7 {
+  background-image: url(images/ngfood7.jpg);
+}
+
+#foodimg8 {
+  background-image: url(images/ngfood8.jpg);
+} 
+ 
+
+
+
