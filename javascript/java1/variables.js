@@ -50,7 +50,7 @@ document.write(result);
 //comparison Operators
 
 document.write(linebreak);
-let age=17;
+let age=1;
 let minAge=18;
 document.write(age==minAge);
 
@@ -58,9 +58,35 @@ if(age==minAge){
     alert('You are '+ age );
 }
 document.write(linebreak);
+document.write('age >= minAge = ');
 document.write(age >= minAge);
 if(age >= minAge){
-    alert('you are '+ minAge + 'or older ');
+    //alert('you are '+ minAge + 'or older ');
 }
+document.write(linebreak);
+document.write('age <= minAge = ');
+document.write(age <= minAge);
+document.write(linebreak);
+
+age=15;
+minAge=18;
+document.write('age=15 ,  minAge=18 then age < minAge = ');
+document.write(age < minAge);
+document.write(linebreak);
+
+document.write('age=15 ,  minAge=18 then age > minAge = ');
+document.write(age > minAge);
+
+document.write(linebreak);
+age='15';
+document.write('age===15 is ');
+document.write(age===15);
+
+document.write(linebreak);
+age=14;
+document.write('age != 15 is ');
+document.write(age != 15);
+
+ 
 
 
