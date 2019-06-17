@@ -103,7 +103,54 @@ body {
 #foodimg8 {
   background-image: url(images/ngfood8.jpg);
 } 
- 
+
+/* culture section*/
+
+
+.jumbotron3 {
+  background-image: url(images/ngctimage11.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+
+}
+.nigerian-banner3 h1{
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 130px;
+  color: white;
+}
+
+.jumbotron4 {
+  background-image: url(images/contimagebg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  /* background-position: */
+}
+
+.container-fluid-contact{
+  background-image: url(images/contimagebg3.jpg);
+}
 
 
 
+.jumbotron5 {
+  background-image: url(images/contact.png);
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  /* background-position: */
+}
+
+.jumbotron6 {
+  background-image: url(images/bgimage.png);
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  /* background-position: */
+}
