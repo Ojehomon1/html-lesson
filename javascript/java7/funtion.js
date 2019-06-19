@@ -154,3 +154,25 @@ console.log(car1, car2);
         }
     }
     console.log(findYourCar("Passat"));
+
+    //////////////////////////////////////////////////////////////////
+    //print triangle of stars form 4 line and 4 colomns
+    
+
+    function drawTriangle(size) {
+    document.write('<br>');
+    
+    for(let i=0 ; i< size ; i++){
+    for(let a=0; a<i; a++){
+            document.write('&nbsp;') 
+                }
+        for(let j=i; j<size; j++){
+            //document.write( 'i=' + i + ' and j= ' + j );
+            document.write(' $ ');
+        }
+        
+        document.write('<br>');
+        }
+    }
+
+    console.log(drawTriangle(8));
