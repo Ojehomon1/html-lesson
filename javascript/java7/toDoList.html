@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List App</title>
+</head>
+<body>
+    <ul>
+        <li>"List" view my to do list</li>
+        <li>"new" add new to do</li>
+        <li>"quit" close the app</li>
+    </ul>
+
+    <!-- <script src="toDoList.js"></script> -->
+
+    <script>
+    
+    let list_array = ['list1','list2','list3'];
+
+       while(list_array !== 'quit'){
+
+           let todo = prompt('List || neu || quit ');
+
+           if(todo == 'list'){
+               alert('show in the colsole!');
+               console.log(list_array);
+           }
+ 
+           else if(todo == 'new'){
+               let a = prompt('Please add Element');
+               list_array.push(a);
+               alert("you added a new element!  press enter and write LIST again! ");
+           }
+
+           else{
+               todo == 'quit';
+               console.log('goodbay');
+               break;
+           }
+
+               // console.log('goodbay');
+
+
+       }
+       console.log('goodbay');
+
+    </script>
+</body>
+</html>
