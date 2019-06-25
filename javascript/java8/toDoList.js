@@ -40,8 +40,8 @@ function deltodo(){
     let delIndex=prompt("which task do you want to delete?");
     let toDelete = toDoList[delIndex]; // to save the element before deleting
     toDoList.splice(delIndex,1);  //index is the start index to delete
-
     console.log("the task "+ toDelete+ "is deleted");
+
     
 
     
