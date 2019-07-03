@@ -144,6 +144,22 @@ let movies = [
 for (i = 0; i < movies.length; i++){
     console.log(movies[i].title, movies[i].rating, movies[i].watched);
 }
+
+//for(let i=0; i<movies.length;1++){
+//    if(movies[i].hasWatch==true){
+    //document.write("<div style'color:green;font-weight:bold'> you watched")
+    // +movies[i].title
+    // + " has " + movies[i].rating
+    // + " Stars <span style='color:gold; '>"
+    // + stars(movies[i].rating) + "</span></div><br><br>");
+//}
+//else {
+    //document.write("you have to watch " + movies[i].title
+    //+ " has " + movies[i].rating
+    //+ " Stars <span style='color:gold;'>" +
+    //stars(movies[i].rating) + "</span><br><br>");
+//}
+//}
 //////////////////////////////////////////////////////////////////////////////
 // using while loop
 

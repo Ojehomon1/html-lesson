@@ -1,8 +1,9 @@
 //define Array in Javascript
 
-let colors=new Array ("red", "blue", "green", "yellow");
+let colors= ["red", "blue", "green", "yellow", ""];
 
-let Colors= ["red", "blue", "green", "yellow"];
+// Alternative method to define an Array - using ...newArray();
+// let colors=new Array ("red", "blue", "green", "yellow");
 
 console.log(colors);
 
@@ -10,7 +11,7 @@ console.log(colors);
 //adding the white color to the end of color Array
 
 
-colors.push('white')
+colors.push('orange')
 
 console.log(colors);
 

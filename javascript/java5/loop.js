@@ -1,13 +1,11 @@
-// print numbers between 1 and 100 * 9
+ //print numbers between 1 and 100 * 9
 
-// for(let i=1 ; i <= 100 ;i++){
+ for(let i=1 ; i <= 100 ;i++){
 
-//     console.log( i + " * 9 = " + i * 9);
-
-
+     console.log( i + " * 9 = " + i * 9);
 
 
-// }
+ }
 // the grade Assigner
 // if the result > 89 then you get A
 // if the result > 80 then you get B
@@ -150,7 +148,7 @@
 
 ///////////////////////////////////////////////////////////////////////////
 // print a harsh/raute form using stars - note the spacing (space holder) and the stars
-
+/*
     for(let i=1 ; i<= 10 ;i++ ) {             // for number of rows
       for (let j=0; j<=4-i; j++){           // for number of columns
         alert(' j= ' + J)
@@ -165,4 +163,4 @@
      document.write("<br>");
   }
 
-
+*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Forms</title>
+</head>
+<body>
+    
+    <button onclick="getCurrentDate()">Get Current Date</button>
+    <!--12344555467-->
+    <button onclick="getUnixTime()">Get Unix Time</button>
+    <!--hh:mm:ss-->
+    <button onclick="setInterval(getTimeStamp,1000)">Get Only Time</button>
+    <!--2019.07.03-->
+    <button onclick="getOnlyDate()">Get only Date</button>
+
+    <button onclick="showWatches()" style="background-color:cyan">Show watches</button>
+
+    <p id="out"></p>
+    <p id="watches"></p>
+    
+
+    <script>
+        // here getCurrentDate()
+        let d = new Date();
+
+        function getTimeStamp() {
+            let d = new Date();
+            h = d.getHours()  // hh (0.23)
+            m = d.getMinutes(); // mm
+            s = d.getSeconds(); // ss
+            out = h + " " + m + ":" + s;
+            document.getElementById("out").innerHTML = out;
+        }
+
+        //function getCurrentDate(){ 
+            //document.getElementById('date').innerHTML=d;           
+            // document.querySelector('p').innerHTML=d; // alternative solution using querySelector
+            // }
+
+        function getUnixTime(){
+            let d = new Date();
+            unix_time = d.getTime();
+            document.getElementById('out').innerHTML=d;
+        }
+
+        
+        function getOnlyDate(){
+            let d = new Date();
+            document.getElementById('out').innerHTML=d;
+        }
+
+       
+        function showWatches(){
+            
+        }
+        
+
+    </script>
+</body>
+</html>
