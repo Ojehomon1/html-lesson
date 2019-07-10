@@ -38,8 +38,8 @@ for(i=0 ; i < colors.length ; i++){
 
 ////////////////////////////////////////////////////////////////////////
 
-let student=[80,70,90,60,77,59];
-for(let student=0 ; counter < 5 ; counter ++)
+let students=[80,70,90,60,77,59,30,44];
+for(let student=0 ; student < students.length; student ++) // when using for loop, preferably use arrayName + length instead of fixed number
 {
-    document.write("<div ")
+    document.write("student " + students[student] + "<br>")
 }
