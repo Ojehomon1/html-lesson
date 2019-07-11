@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate your age</title>
+</head>
+<body>
+    
+    <p>Input your age: <input type="text" id="age"></p>
+    <button type="button" onclick="validate()">Validate</button>
+
+    <!--/////////////////////////////////////////////////////////////////////-->
+    <!--My own attempt to solve the problem / See solution below-->
+    <!--<p>Show division result<input type="text" id="divD"></p>
+    <button type="button" onclick="checkit()">Check</button>
+    -->
+    <!--//////////////////////////////////////////////////////////////////////-->
+
+    <p>Number N: <input type="text" id="n-number"></p>
+    <p>Number M: <input type="text" id="m-number"></p>
+    <button type="button" onclick="divide()">Divide</button>
+
+
+    <script>
+        function validate(){
+            try {
+                let age = document.getElementById("age").value;
+                console.log("Your age is: " + age);
+
+                if(age < 18) throw "Your age is below 18";
+            } catch(err) {
+                alert(err);
+
+            }
+        }
+    
+       /*/////////////////////////////////////////////////////////////////////////
+        let n;
+        let m;
+        let x = n/m;
+        function divide(){
+            n = 10;
+            m = 2;
+            x = n/m;
+
+            try{
+            let x = document.getElementById(divD).value;
+            console.log(x);
+
+            if(m = 0) throw "You cannot divide by 0";
+            } catch(err) {
+                alert(err);
+            }
+
+        }    
+        ///////////////////////////////////////////////////////////////////////////////*/
+
+        function divide (){
+            try{
+                //divide
+                let n = document.getElementById("n-number").value;
+                let m = document.getElementById("m-number").value; 
+                if(m == 0) throw "cannot divide by 0"
+                if(isNaN(n/m)) throw "probably data contains a string"
+                alert(n/m);
+
+            } catch(e) {
+                alert(e)
+            }
+        }
+
+    </script>
+    
+
+
+</body>
+</html>
