@@ -1,7 +1,7 @@
 
 //function dummy(name) {
-    //// do something
-   // alert("Hi "+name);
+     //do something
+   //alert("Hi "+name);
 
 //}
 
@@ -10,7 +10,7 @@
 ////////////////////////////////////////////////////////
 
 //function greetUser(name, surname) {
-    // do something
+     //do something
     //alert("Hi "+ name + " " + surname);
 //}
 
@@ -19,9 +19,9 @@
 /////////////////////////////////////////////////////////
 
 //function declaration
-function square(number) {
-    return number*number;
-}
+//function square(number) {
+    //return number*number;
+//}
 
 
 //using anonymous function
@@ -174,5 +174,5 @@ console.log(car1, car2);
         document.write('<br>');
         }
     }
-
+-
     console.log(drawTriangle(8));
