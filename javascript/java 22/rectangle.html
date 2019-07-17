@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rectangle</title>
+</head>
+<body>
+    
+    <div id="myrect"></div>
+
+    <script>
+        
+        class Rectangle {
+            constructor(height, width, color) {
+                this.height = height;
+                this.width = width;
+                this.color = color;
+            }
+            create() {
+                let myrect = document.getElementById("myrect");
+                myrect.style.height=this.height;
+                myrect.style.width=this.width;
+                myrect.style.backgroundColor=this.color;
+
+
+            }
+        }
+        const rect1 = new Rectangle("90px", "150px", "cyan");
+        rect1.create();
+        
+    </script>
+
+
+
+</body>
+</html>
