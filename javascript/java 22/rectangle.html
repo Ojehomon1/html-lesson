@@ -20,6 +20,12 @@
             }
             create() {
                 let myrect = document.getElementById("myrect");
+                // myRect = document.getElementByID("myRect")  
+                //let new Div = document.createElement("div");
+                //myRect.appendChild(newDiv);
+                //newDiv.style.height = this.height;
+                //newDiv.style.width = this.width;
+                //newDiv.style.background = this.color;
                 myrect.style.height=this.height;
                 myrect.style.width=this.width;
                 myrect.style.backgroundColor=this.color;
@@ -27,8 +33,32 @@
 
             }
         }
-        const rect1 = new Rectangle("90px", "150px", "cyan");
-        rect1.create();
+       // const rect1 = new Rectangle("90px", "150px", "cyan");
+        //rect1.create();
+
+        //////////////////////////////////////////////////////////////////
+        // my solution
+        /*
+        class Circle extends Rectangle {
+        constructor(height,width,color,radius){
+             super(height,width,color);
+             this.radius = radius;
+         }
+            develop() {
+                let myrect = document.getElementById("myrect");
+                myrect.style.height=this.height;
+                myrect.style.width=this.width;
+                myrect.style.backgroundColor=this.color;
+                myrect.style.borderRadius=this.radius;
+
+            }
+        }
+        let c1 = new Circle ("90px", "150px", "red", "50%");
+        c1.develop();
+        */
+        //////////////////////////////////////////////////////////////
+        // Mansours solution
+
         
     </script>
 

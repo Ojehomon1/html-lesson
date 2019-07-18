@@ -51,11 +51,7 @@
     const u = new User("dci_user", "127.1.1.1");
     const u2 = new User("Someone", "127.2.2.2")
     //////////////////////////////////////////////////////
-    class Admin extends User {
-        constructor(username,ip,category){
-             super(username,ip);
-             this.category = category;
-         }
+    
          getCategory() {
              document.write(`The admin ${this.username} moderates the category ${this.category}`)
          }
