@@ -82,3 +82,28 @@ book1.info=function(){
 
 }
 console.log(book1.info());
+
+//////////////////////////////////////////////////////////////////////
+
+function Book(name,author,year){
+
+    this.bookName = name;
+    this.authorName = author;
+    this.publishYear = year;
+    this.info = function(){
+        return this.bookName + "written by "+this.authorName+ "is published in " + this.publishYear
+    };
+
+
+}
+
+let cssBook = new Book("learn CSS in 4 days","Peter",2019);
+
+console.log(cssBook.info());
+
+for (let i in cssBook){
+    console.log(cssBook[i]);
+}
+////////////////////////////////////////////////////////////////////////
+
+let img 
