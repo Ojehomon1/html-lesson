@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Calculate Date (in JavaScript ISO Dates formate)</h2>
+
+<p id="demo"></p>
+<script>
+var d = new Date("2019-07-31");
+let month = d.getMonth()+1;
+if(month < 10 ) {   month = "0" + month ;}
+document.getElementById("demo").innerHTML = d.getDate() + "."+ month + "."+ d.getFullYear();
+</script>
+
+</body>
+</html>
