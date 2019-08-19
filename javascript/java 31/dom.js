@@ -107,7 +107,7 @@ let itemParent=document.querySelector("#items"); // we select the parent
 let firstLi=document.querySelector(".list-group-item") // we select the element where we insert before
 itemParent.insertBefore(newLi,firstLi); // we insert the new li before the first li
 
-// ANOTHER WAY to create new li befor the first one - third alternative solution
+// ANOTHER WAY to create new li before the first one - third alternative solution
 // // create new li befor the first one
 // let newLi = document.createElement("li"); //create new li
 // newLi.textContent="im the new li :)";
