@@ -22,3 +22,15 @@ let jsonStudent = JSON.stringify(objStudent); //converting to JSON
 console.log(jsonStudent);
 console.log(JSON.parse(jsonStudent)); // converting to OBJECT
 
+
+
+let myObj1 = {
+    "name":"John",
+    "age":30,
+    "cars":["Ford", "BMW", "Fiat"]
+
+};
+
+for(let i in myObj1.cars){
+    alert(myObj1.cars[1]);
+}

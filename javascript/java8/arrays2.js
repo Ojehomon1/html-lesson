@@ -5,7 +5,7 @@ let colors= ["orange","pink","green"];
 console.log(colors);
 colors.push("blue");
 console.log(colors);
-//array will be  ["oragne","pink","green","blue"]
+//array will be  ["orange","pink","green","blue"]
 
 //pop is used to remove the last element from array
 console.log(colors);
