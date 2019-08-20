@@ -152,7 +152,19 @@ function addItem(e){
 
 ul.addEventListener("click", removeItem);
 function removeItem(e){
-    console.log(e.target.className);
+
+    //console.log(e.target.className);
+
+    if(e.target.className == "btn btn-danger btn-sm float-right delete"){
+        if(confirm("are you sure")) {
+            ul.removeChild(e.target.parentElement);
+        }
+    };
+
+
+
+
+    
     // another way
     //if(e.target.classList.contains("delete")){};
     //ul.removeChild(e.target.parentElement);
@@ -184,10 +196,10 @@ function removeItem(e){
     let liItems = ul.getElementsByTagName("li");
     //console.log(liItems);
     for(let i = 0; i < liItems.length; i++){
-        let liText = liItems[i].firstChild.textContent
+        let liText = liItems[i].firstChild.textContent;
 
         
-        if(liText.toLowerCase()==text){
+        if(liText.toLowerCase().indexOf(text)!= -1){
         console.log(liText);
         liItems[i].style.display="block";
         }
