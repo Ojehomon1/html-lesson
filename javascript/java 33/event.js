@@ -1,13 +1,22 @@
 let btn = document.getElementById("btn");
 
-//btn.addEventListener("click");
+// //btn.addEventListener("click",function(e){
+//     console.log(e);
+// });
+
 
 btn.addEventListener("click",btnClick);
 
 function btnClick(e){
-    //console.log(e)
     //console.log(e.target);
+    setTimeout(hideDiv,2000);
 }
+
+function hideDiv(){
+    div.style.display="none";
+
+}
+
 
 let div = document.getElementById("myDiv");
 div.addEventListener("click",divClick);
@@ -24,4 +33,12 @@ function inputKeyUp(e){
     document.querySelector("h1").textContent=e.target.value;
    // console.log(e.target.value);
 }
+
+// let input = document.getElementById("btn2");
+// input.addEventListener("click", inputKeyUp);
+
+// function inputKeyUp() {
+
+
+// }
 

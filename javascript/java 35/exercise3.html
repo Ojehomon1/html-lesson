@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Closure Exercise 3</title>
+</head>
+<body>
+Write function sum that works like this: sum(a)(b) = a+b.
+Yes, exactly this way, using double parentheses (not a mistype).
+
+For instance:
+sum(1)(2) = 3
+sum(5)(-1) = 4
+
+    <script>
+        
+
+        function makeSum(a) {
+        function addition(b) {
+    
+            return a += b;
+
+        }
+        return addition
+    }
+    var sum = makeSum(2)(4);
+    console.log(sum);
+
+//////////////////////////////////////////////////////////////////////
+
+function main() {
+        function func1() {
+    
+            return 1;
+
+        }
+        function func2() {
+            return 2 + func1();
+    }
+    var out = func2(2);
+  return out;
+    }
+
+var res = main();
+console.log(res);
+
+
+ </script>
+</body>
+</html>
+

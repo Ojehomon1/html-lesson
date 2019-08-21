@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Closure Exercise 1</title>
+</head>
+<body>
+Here we make two counters: counter and counter2 using the same makeCounter function.
+Are they independent? What is the second counter going to show? 0,1 or 2,3 or something else?
+
+
+
+
+    <script>
+    function makeCounter() {
+    let count = 0;
+    
+        return function() {
+            return count++;
+        };
+    }
+    
+    let counter = makeCounter();
+    let counter2 = makeCounter();
+    let counter3 = makeCounter();
+    
+    console.log( counter() ); // 0
+    console.log( counter() ); // 1
+    
+    console.log( counter2() ); // ?0
+    console.log( counter2() ); // ?1
+
+    console.log( counter2() ); // ?3
+    console.log( counter2() ); // ?4
+
+   
+
+    
+    
+        
+    </script>
+</body>
+</html>

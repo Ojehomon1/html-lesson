@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recursive Exercise</title>
+</head>
+<body>
+    <p>
+        Write a function sumTo(n) that calculates the sum of numbers 1 + 2 + ... + n. For instance:
+
+            sumTo(1) = 1
+            sumTo(2) = 2 + 1 = 3
+            sumTo(3) = 3 + 2 + 1 = 6
+            sumTo(4) = 4 + 3 + 2 + 1 = 10
+            ...
+            sumTo(100) = 100 + 99 + ... + 2 + 1 = 5050
+            Make 2 solution variants:
+            
+            Using a for loop.
+            Using a recursion, cause sumTo(n) = n + sumTo(n-1) for n > 1.
+            P.S. Which solution variant is the fastest? The slowest? Why?-
+        </p>
+
+<script>
+//Using While loop solution
+
+function sumToLoop(n){
+    let sum = 0;
+    while(n > 0) {
+        sum += n;
+        n--;
+    }
+    return sum;
+}
+console.log("loop " +  sumToLoop(10));
+///////////////////////////////////////////////////////////////////////////////////////
+    
+/////////////////////////////////////////////////////////////////////////////////////
+// // Using Recursive solution
+// let sum = 0;
+//        function sumToRec(m){
+//            if(m > 0 ){
+//                sum += m;
+//                return sumToRec(m-1);
+//            }
+//            return sum;
+//        }
+//        console.log("Recursive " + sumToRec(10));
+///////////////////////////////////////////////////////////////////////////////
+//  Using recursive solution 2
+let sum = 0;
+    // function sumToRec(m){
+    //     if(m > 0){
+    //         console.log("sum:" + sum + " m:" + m);
+    //         sum += m;
+         
+    //         return sumToRec(m-1);
+
+    //     }
+    //     return sum;
+    // }
+
+
+    
+</script>
+</body>
+</html>
