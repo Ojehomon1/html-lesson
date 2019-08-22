@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+body {
+    height: 100vh;
+}
+div{
+    width:50%;
+    height:50%;
+    border:1px solid red;
+    margin: 0 auto
+}</style>
+<div id="main"></div>
+
+
+    <script>
+    let main = document.getElementById("main");
+
+    let newDiv = document.createElement("div");
+
+    main.appendChild(newDiv);
+
+    let newP = document.createElement("p");
+    newDiv.appendChild(newP);
+    newP.innerHTML="Hello";
+    
+    </script>
+</body>
+</html>

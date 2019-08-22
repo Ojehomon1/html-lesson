@@ -13,7 +13,7 @@ saveBtn.addEventListener("click",function(){
 ;
 
 delBtn.addEventListener("click", function(){
-    localStorage.setItem(pNumber.value,pName.value);
+    localStorage.clear();
 
 });
 
