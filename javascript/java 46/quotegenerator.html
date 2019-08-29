@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quote Generator</title>
+</head>
+<body>
+  <p>
+    <!-- Quote of the Day
+    Create random quote app, that shows a random quote when ever the user loads the App(page) or clicks the get random quote button.
+       Create a function that returns a random quote from the array of quotes that's given. Remember that there's a nice function for random numbers in the MDN documentation for Math.rand().
+    Note: Sometimes it's a good idea to create multiple functions, that do one specific thing only, to make the code more readable and easier to maintain / extend.
+       Add the needed JavaScript to load a new quote, when the button below the quote is used.
+       Optional: Style to your pleasing & feel free to load/use bootstrap via CDN. -->
+  </p>  
+<h3>Quote Generator</h3>
+<div id="quoteDisplay">
+     <!--Quotes will be displayed here-->
+</div> <br>
+<button onclick="newQuote()">New Quote</button>
+
+<script>
+let quotes = [
+"The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
+"The way to get started is to quit talking and begin doing. -Walt Disney",
+"Life is what happens when you're busy making other plans. -John Lennon",
+"It is during our darkest moments that we must focus to see the light. -Aristotle",
+"Spread love everywhere you go. Let no one ever come to you without leaving happier. -Mother Teresa",
+"Whoever is happy will make others happy too. -Anne Frank",
+"The purpose of our lives is to be happy. -Dalai Lama",
+"Life is really simple, but we insist on making it complicated. -Confucius",
+"You are never too old to set another goal or to dream a new dream. -C.S Lewis"
+]
+
+function newQuote() {
+    let randomNumber = Math.floor(Math.random() * (quotes.length));
+    document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
+}
+
+
+</script>
+
+</body>
+</html>

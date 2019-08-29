@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Color Generator</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+    <div id="main"></div> 
+    <script>
+    let myInput = document.getElementById("myInput");
+
+    function hexRandom(){
+        let hexColors = "1234567890ABCDEF";
+        let hash = "#";
+        for(let h = 0; h < 6; h++){
+            let r = Math.floor(Math.random() * hexColors.length);
+           // console.log(r);
+           hash += hexColors[r];
+          //console.log(hash);
+        };
+
+        return hash;
+        
+    }
+    //hexRandom();
+    myInput.addEventListener("click",function(){
+        for(let i=0; i<myInput.value; i++){
+            let createDiv = document.createElement("div");
+            
+            createDiv.style.background = hexRandom();
+            createDiv.textContent = hexRandom();
+
+
+            createDiv.style.width = "250px"; // another way ---createDiv.style.width = 250 + "px";
+            createDiv.style.height = "250px";
+            createDiv.style.cssFloat = "left";  //another way ----createDiv.style.display = "inline-block";
+            createDiv.style.margin = "10px";
+            let mainDiv = document.getElementById("main");
+            mainDiv.appendChild(createDiv);
+
+
+            ///// to remove created Divs
+            let myBtn = document.createElement("button"); //to create a delete button in the created Divs
+            myBtn.textContent = "Remove";
+            myBtn.style.cssFloat = "right"
+
+            createDiv.appendChild(myBtn);
+            myBtn.addEventListener("click",function(){
+
+                createDiv.remove();
+            })
+
+
+        }
+    })
+
+    
+    </script>
+</body>
+</html>
