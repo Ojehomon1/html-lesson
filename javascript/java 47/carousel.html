@@ -5,14 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carousel</title>
+
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+    .container{
+        display: flex;
+        width:50vw;
+        height:50vh;  
+        background:rgba(0,0,0,0.7);
+        margin:5vw auto;
+        overflow: hidden;
+        position:relative;
+    }
+    .right{
+        right:0;
+    }
+    span{
+        width:10%;
+        height:100%;
+        background:rgba(255,255,255,0.5);
+        position:absolute;
+        top:0;
+        z-index:5;
+        font-size:4vw;
+        color:red;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    span:hover{
+        background: rgba(0,0,0,0.7);
+        cursor:pointer;
+    }
+    img{
+        width: 100%;
+        height: 30vw;
+        transition: transform 0.4s ease-in-out;
+
+    }
+
+0
+    </style>
 </head>
 <body>
-    <ol>
-        <li>Create a carousel of up to 6 images</li>
-        <li>Add arrows for navigation</li>
-        <li>Write a function that handles each of the navigation behaviours</li>
-        <li>Optional: Style to your pleasing</li>
-        <li>Hint: Refer the representation below, for an idea of what your result should look like</li>
-    </ol>
+   
+   <div class="container">
+       <span class="left">&lArr;</span>
+       <span class="right">&rArr;</span>
+    <img src="https://picsum.photos/id/793/800/400" alt="">
+    <img src="https://picsum.photos/id/791/800/400" alt="">
+    <img src="https://picsum.photos/id/790/800/400" alt="">
+    <img src="https://picsum.photos/id/789/800/400" alt="">
+    <img src="https://picsum.photos/id/788/800/400" alt="">
+    <img src="https://picsum.photos/id/787/800/400" alt="">
+
+
+   </div>
+
+   <script src="carousel.js"></script>
 </body>
 </html>
