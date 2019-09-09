@@ -4,8 +4,12 @@
 //we change all li colors to green in vanilla js
 let lis = document.querySelectorAll("li");
 for(let i=0; i<lis.length; i++){ 
-    lis[i].style.color="green";
+   // lis[i].style.color="green";
 }
+
+// lis.forEach(element => {
+//     element.style.color="orange";
+// });
 
 //change all li colors to red using jquery
 $("li").css("color", "red");

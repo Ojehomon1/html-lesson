@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.min.js" integrity="sha256-fIuSfP8oRbwWG9pRr+FaGfBU62kYY+7YqUsXSCgnYqM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HB Each Loop</title>
+</head>
+<body>
+    <script id="hb-object" type="text/x-handlebars-template">
+  <div class="entry">
+      <h1> {{title}} </h1>
+      <h2> {{author.name}} </h2>
+      <img src="{{image}}" alt="">
+      <p class="author-info">{{author.name}} is {{author.age}} and lives in {{author.city}} </p>
+      <div class="body">
+          {{text}}
+      </div>
+  </div>
+    </script>    
+
+    <script>
+        // Retrieve the template Data from HTML
+        var template = $('#hb-object').html();
+        // Complie the template
+        var templateScript = Handlebars.compile(template);
+        // Define your Name and occupation
+        var context = {
+            "title":"awesome blog",
+            "image":"https://cdn.pixabay.com/photo/2019/08/09/13/21/wedding-4395069_960_720.jpg",
+            "author":{"name": "Tobias", "age":"25", "city": "New York"},
+            "text":"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure"
+        };
+        var html = templateScript(context);
+        // Insert the HTML code into the page
+        $(document.body).append(html);
+    </script>
+</body>
+</html>

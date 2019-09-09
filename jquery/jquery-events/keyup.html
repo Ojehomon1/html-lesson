@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyup Event in jQuery</title>
+
+    <style>
+        p{
+            padding: 15px;
+            background: lawngreen;
+            display: none;
+
+        }
+        div{
+            margin:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <input id="up" type="text">
+    <div>keyup counter : <span>0</span></div>
+    <p>keyup event is triggered</p>
+
+
+    <script>
+        $(document).ready(function(){
+            //$(#up) or we use
+
+            let i = 0;
+            $('#up').keyup(function(){
+              
+                $("span").text(i+=1);
+                $("p").show().fadeOut();
+
+                //alert("your pressed a key");
+
+            });    
+            
+        })
+        
+        
+    </script>
+</body>
+</html>
