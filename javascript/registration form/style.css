@@ -28,3 +28,8 @@ label,select
 .registerBtn:hover{
     opacity: 1;
 }
+label{
+    font-weight: bold;
+    background: white;
+    
+}
