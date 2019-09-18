@@ -25,7 +25,7 @@ function nextDiv(e){
     
 
 
- document.getElementById('photoLabel').src = imageFile.replace('C:\\fakepath\\', './images/' );
+ 
 
   
 
