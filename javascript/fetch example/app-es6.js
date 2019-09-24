@@ -2,24 +2,21 @@ let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3")
 
-btn1.addEventListener("click", getText);
-btn2.addEventListener("click", getJson);
-btn3.addEventListener("click", getExternal);
 
 
 // Get Local Text file data
-function getText(){    
+let getText= ()=>{   
     fetch("test.txt")
-    .then(function(res) {
+    .then(res => {
         return res.text();
 
     })
-    .then(function(data){
+    .then( data =>{
         console.log(data);
         document.getElementById("output").innerHTML = data;
 
     })
-    .catch(function(err){
+    .catch( err => {
         console.log(err);
 
     })
@@ -27,23 +24,23 @@ function getText(){
 }
 
 // Get Local Json file data
-function getJson(){
+let getJson = () =>{
     fetch("posts.json")
-    .then(function(res) {
+    .then( res => {
         return res.json();
 
     })
-    .then(function(data){
+    .then(data => {
         console.log(data);
        let output = "";
-        data.forEach(function(post){
+        data.forEach( post => {
             output += `<li> ${post.title} : ${post.body} </li>`;
 
         })
         document.getElementById("output").innerHTML = output;
 
     })
-    .catch(function(err){
+    .catch( err => {
         console.log(err);
 
     })
@@ -51,29 +48,32 @@ function getJson(){
 }
 
 // Get from External Api
-function getExternal(){
+   let getExternal = () => {}
     fetch("https://api.github.com/users")
-    .then(function(res) {
+    .then( res => {
         return res.json();
 
     })
-    .then(function(data){
+    .then( data =>{
         console.log(data);
        let output = "";
-        data.forEach(function(user){
+        data.forEach( user =>{
             output += `<li> ${user.login} : ${user.html_url} </li>`;
 
         })
         document.getElementById("output").innerHTML = output;
 
     })
-    .catch(function(err){
+    .catch(err => {
         console.log(err);
 
     })
 
-}
 
 
-let friends = ["A","B","C"];
+btn1.addEventListener("click", getText);
+btn2.addEventListener("click", getJson);
+btn3.addEventListener("click", getExternal);
+
+
 
