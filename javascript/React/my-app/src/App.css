@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  color:red;
+  background: #09d3ac;
+}
+
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: sans-serif;
+  background: lightcyan;
+}
+
+.person{
+  width:200px;
+  padding:20px;
+  box-shadow:0 3px 3px #ccc;
+  border:1px soldi #aaa;
+  background:blue;
+  display:inline-block;
+  color:white;
+  margin:10px;
+}
+#todo{
+  border:3px solid #aaa;
+  border-radius:20px;
+  width:300px;
+  box-shadow:0 2px 2px #bbb;
+  margin:25px;
+  background:grey;
+
+}
+#todo ul{
+  list-style-type: none;
+  width:250px;
+}
+#todo ul li{
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

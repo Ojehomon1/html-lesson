@@ -20,7 +20,7 @@ app.get('/', function(req, res){
 });
 
 // state route
-app.get('/state', function(req, res) {
+app.get('/states', function(req, res) {
    var state = {
        'state': 'Hamburg',
        'capital': 'Hamburg'
@@ -28,15 +28,7 @@ app.get('/state', function(req, res) {
    res.send(state);
 });
 
-app.get('/job', function(req, res) {
-    var state = {
-        'state': 'Hamburg',
-        'job': 'webdeveloper'
-    }
-    res.send(state);
- });
  
-
 //listening
 app.listen(3000, function(){
     console.log("Example app started...");
