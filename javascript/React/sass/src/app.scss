@@ -1,0 +1,25 @@
+$my-background:url('./images/img.jpg');
+$my-color:darkblue;
+
+body{
+    background-repeat:no-repeat;
+    background:$my-background;
+    background-size:cover;
+    color:$my-color;
+}
+div{
+    text-align:center;
+    h1{
+        font-family:Verdana;
+        color:red;
+    }
+    img{
+        width:600px;
+        height:400px;
+    }
+}
+
+
+
+
+

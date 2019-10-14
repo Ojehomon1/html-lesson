@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.containerClass {
+
+  background:url('./images/img2.jpg');
+  background-size:cover;
+  height: 100vh;
+}
