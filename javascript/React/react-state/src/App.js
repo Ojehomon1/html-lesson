@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Person from './Person';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  state = {
+    persons : [
+        { name : "Max" , city : "Essen", job : "Docter"},
+        { name : "Anna" , city : "Berlin", job : "Journalist"},
+        { name : "Romal" , city : "Leipzig", job : "Dentist"}
+    ],
+    country : "Germany",
+    curreny: "Euro"
+
+  }
+  changeData = () => {
+    //alert(this.state.persons[0].name);
+    this.setState({
+      persons : [
+      { name : "John" , city : "New York", job : "PHP Developer"},
+      { name : "Lara" , city : "Munich", job : "Journalist"},
+      { name : "Ali" , city : "Hamburg", job : "Dentist"}
+  ],
+  country: "USA"
+
+
+})
+alert(this.state.country);
+
+  }
+  render() {
+    return (
+      <div className="App">
+        <h1> This is React Class Component</h1>
+
+        <Person name="Lars" city="Hannover" job=" Web Designer" />
+        <Person name={this.state.persons[0].name}
+        city={this.state.persons[0].city} job={this.state.persons[0].job} />
+
+        <Person name={this.state.persons[1].name}
+        city={this.state.persons[1].city} job={this.state.persons[1].job} />  
+
+        <Person name={this.state.persons[2].name}
+        city={this.state.persons[2].city} job={this.state.persons[2].job} >
+          <button onClick={this.changeData}> change data </button>
+        </Person>
+
+
+      </div>
+    )
+  }
 }
 
-export default App;

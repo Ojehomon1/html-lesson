@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import InputTodo from './inputTodo'
 import ListTodo from './listTodo';
- import './App.css';
+import './App.css';
 
 let todoItems = [];
 todoItems.push({ id : 1 , task: "Learn React", done:false});
@@ -30,13 +30,27 @@ todoItems.push({ id : 3 , task: "Go to gym", done:false});
 
 
   }
+  
+  isValid = () =>{
+    if(this.state.todoValue === ''){
+      return false;
+    }
+    return true;
+  }
 
   render(){
     return(
       <div className='App'>
-        {/* the input component */}
-        <InputTodo todoValue={this.state.todoValue} changed = {(e)=>this.changeTodoValue(e)}/>
-          <button onClick={()=>this.addToList()}>add to the list</button>
+        {
+          todoItems.map((item) =>{
+            return <h1> {item.task}</h1>
+            }
+          )
+        }
+        <InputTodo todoValue={this.state.todoValue}
+         changed = {(e)=>this.changeTodoValue(e)}/>
+         errorMessage={this.isValid() ? '': 'this field is required'}
+          <button disabled={!this.isValid()} onClick={() =>this.addToList()}>add to the list</button>
           <ListTodo list = {this.state.todoList} />
       </div>
       

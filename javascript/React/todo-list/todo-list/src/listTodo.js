@@ -5,8 +5,8 @@ const ListTodo = (props)=>{
     let listOfItems;
     if(props.list.length > 0){
         listOfItems=props.list.map((item,index)=>
-        <h4 key={index}>{item}</h4>
-            
+        <li key={index}>{item}</li>
+        //<h4 key={index}>{item}</h4>  
         )
     }
     else {
