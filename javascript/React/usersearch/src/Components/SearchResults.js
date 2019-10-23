@@ -7,21 +7,25 @@ export default class SearchResults extends Component {
     
         this.state = {
             users: [
-                { id: 1001, name: "John Smith", email: "john@abc.com" },
-                { id: 1002, name: "Kyra Johnson", email: "kyra@gmail.com" },
-                { id: 1003, name: "Kelly Brandon", email: "kelly@dci.com" },
-                { id: 1004, name: "Peter Weller", email: "peter@gmail.com" },
-                { id: 1005, name: "Quentin Jackson", email: "quentin@dci.com" },
-                { id: 1006, name: "H Jenna La Croisse", email: "hjenna@abc.com" },
-                { id: 1007, name: "Herbert Rocks", email: "herbert@abc.com" },
-                { id: 1008, name: "Mike Johnson", email: "mikej@dci.com" },
-                { id: 1009, name: "Sarah Mchael", email: "sarah@dci.com" }
+                { id: 1000, name: "John Smith", email: "john@abc.com" },
+                { id: 1001, name: "Kyra Johnson", email: "kyra@gmail.com" },
+                { id: 1002, name: "Kelly Brandon", email: "kbrandon@microsoft.com" },
+                { id: 1003, name: "Peter Weller", email: "Peter.weller@robocop.com" },
+                { id: 1004, name: "Brandon Fisher", email: "bfisher@disney.com" },
+                { id: 1005, name: "Quentin Jackson", email: "quentin@miramax.com" },
+                { id: 1006, name: "Jenna La Croisse", email: "jlc@bingo-now.org" },
+                { id: 1007, name: "Herbert Rocks", email: "herby@sofast.net" },
+                { id: 1008, name: "Mike Johnson", email: "mike@microsoft.com" },
+                { id: 1009, name: "Sarah Mchaels", email: "Sarahm@abc.com" }
 
             ]
         }
     }
     
     render() {
+        let result = this.state.users.filter((item)=>{
+        return item.name.includes(this.props.searchFor)
+    })
         return (
             <div>
                 <table>
@@ -46,3 +50,4 @@ export default class SearchResults extends Component {
         )
     }
 }
+

@@ -1,0 +1,53 @@
+   render() {
+        return (
+            <div>
+                <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                 {
+                     this.state.users.map((user) => {
+                        return (
+                            <User id={user.id} name={user.name} email={user.email} />
+                        )
+                     })
+                }      
+                </tbody>
+                </table>
+            </div>
+        )
+    }
+
+
+import React from 'react';
+import './App.css';
+import Header from './Components/Header'
+import SearchResults from './Components/SearchResults';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <input onChange={this.search} id="tableSearch" />
+      <button onClick={this.click}>Search</button>
+      <table>
+        <tbody>
+          <SearchResults searchFor={this.state.lastSearchTerm}/>
+        </tbody>
+      </table>
+      
+
+    </div>
+  );
+}
+
+export default App;
+
+
+
+      
