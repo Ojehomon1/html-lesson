@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.Navbar{
+  display: flex;
+  justify-content: center;
+}
+.Navbar li{
+  padding: 0 10px;
+}
+ul {
+  list-style-type: none;
+}
+
+.UserImage{
+  width:400px;
+  float:left;
+  margin:20px;
+}
+.hobbyFotos img{
+  width:250px;
+  float:left;
+
+}
+.hobbyFotos{
+  height:100px;
+  overflow:hidden;
+}
+
+.musicFotos{
+  height:100px;
+  overflow:hidden;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}

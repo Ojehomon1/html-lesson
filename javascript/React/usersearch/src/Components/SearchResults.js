@@ -17,15 +17,33 @@ export default class SearchResults extends Component {
                 { id: 1007, name: "Herbert Rocks", email: "herby@sofast.net" },
                 { id: 1008, name: "Mike Johnson", email: "mike@microsoft.com" },
                 { id: 1009, name: "Sarah Mchaels", email: "Sarahm@abc.com" }
-
             ]
         }
     }
+    lastSearchFor = '';
+    shouldComponentUpdate(nextProps){
+        console.log('this is nextProps',nextProps);
+        if(nextProps.searchFor===this.lastSearchFor){
+            return false;
+        }
+        else{
+            this.lastSearchFor = nextProps.searchFor;
+            return true;
+        }
+        
+    }
     
     render() {
-        let result = this.state.users.filter((item)=>{
-        return item.name.includes(this.props.searchFor)
-    })
+       
+
+        let result=this.state.users.filter( (user)=>user.name.toLowerCase().includes(this.props.searchFor.toLowerCase()) );
+        console.log(result);
+
+        let filter=result.map( (item)=>{
+            return <User key={item.id} id={item.id}
+            name={item.name} email={item.email} /> });
+    
+
         return (
             <div>
                 <table>
@@ -37,13 +55,9 @@ export default class SearchResults extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                 {
-                     this.state.users.map((user) => {
-                        return (
-                            <User id={user.id} name={user.name} email={user.email} />
-                        )
-                     })
-                }      
+                 
+                     {filter}
+                      
                 </tbody>
                 </table>
             </div>
