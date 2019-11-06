@@ -8,7 +8,7 @@ export default function Me() {
             <h3>this is the Me page</h3>
             <img className="UserImage" src={far} alt=""></img>
             <p>My name is Mr Somebody and my home-town, whoops I forgot the name</p>
-            <p>I was born in Somewhere and my skills are this and that.
+            <article>I was born in Somewhere and my skills are this and that.
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
                 sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
@@ -16,7 +16,7 @@ export default function Me() {
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                  invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                 no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                 no sea takimata sanctus est Lorem ipsum dolor sit amet.</article>
             <p>Some websites I frequently use include:</p>
             <p>http://www.google.com</p>
             <p>https://www.hamburg.de</p>

@@ -15,7 +15,6 @@ import musicFoto4 from './Images/musicFoto4.jpg'
 export default function Hobbies() {
     return (
         <div className="myHobbies">
-            <h3>this is the Hobbies page</h3>
             <h3>Hobby#1 Football:</h3>
             <div className="hobbyFotos">
                 <img src={footyImg1} alt=""></img>
@@ -25,15 +24,15 @@ export default function Hobbies() {
             </div>
             <h3>Hobby#2 Music</h3>
             <div className="hobbyFotos">
-                <img src={musicFoto1}></img>
-                <img src={musicFoto2}></img>
-                <img src={musicFoto3}></img>
-                <img src={musicFoto4}></img>
+                <img src={musicFoto1} alt=""></img>
+                <img src={musicFoto2} alt=""></img>
+                <img src={musicFoto3} alt=""></img>
+                <img src={musicFoto4} alt=""></img>
 
             </div>
 
             
-            </div>
+        </div>
         
     )
 }

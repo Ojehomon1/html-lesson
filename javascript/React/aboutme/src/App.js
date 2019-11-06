@@ -3,7 +3,7 @@ import './App.css'
 import Me from './Components/Me'
 import Hobbies from './Components/Hobbies';
 import Contact from './Components/Contact';
-
+import Error from './Components/Error';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,14 +12,17 @@ import {
 } from 'react-router-dom';
 
 export default class App extends Component {
+  if
   render(){
     return (
     <Router>
       <div className="App">
+        <div class="Banner">
          <h1>About Me</h1>
+        </div>
         <ul className="Navbar">
           <li>
-          <Link to="/Me">
+          <Link to="/">
           Me
           </Link>
           </li>
@@ -34,11 +37,10 @@ export default class App extends Component {
           </Link>
           </li>
         </ul>
-        <hr/>
       </div>
 
       <Switch>
-        <Route exact path="/Me">
+        <Route exact path="/">
           <Me />
         </Route>
         <Route path="/Hobbies">
@@ -46,6 +48,9 @@ export default class App extends Component {
         </Route>
         <Route path="/Contact">
           <Contact />
+        </Route>
+        <Route >
+          <Error />
         </Route>
       </Switch>
     </Router>
