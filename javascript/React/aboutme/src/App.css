@@ -64,3 +64,131 @@ form {
 .App-link {
   color: #09d3ac;
 }
+
+
+_______________________________________________________________-
+
+/* *{
+  box-sizing: border-box;
+}
+body{
+  background: lightgrey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.me{
+  color:white;
+  text-align: left;
+  margin-left: 5px;
+}
+.App {
+  text-align: center;
+}
+h2, h3, p{
+  color: white;
+}
+/* nav */
+​
+/* ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: teal;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+​
+}
+li a:hover:not(.active) {
+  background-color: grey;
+}
+.activo{
+  font-weight: bold;
+  text-decoration-line: underline; 
+  text-decoration-style: double;
+  background: grey;
+}
+/* Contact Form */
+/*.input-container{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.icon, i {
+  padding: 10px;
+  background: grey;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+.input-field,textarea{
+  width: 60%;
+  padding: 10px;
+  outline: none;
+}
+.input-field:focus,textarea:focus{
+  border: 2px solid grey
+}
+.btn{
+  background: grey;
+  color:white;
+  padding: 15px 20px;
+  border:none;
+  cursor: pointer;
+  width: 65%;
+  opacity: 0.8;
+  margin-left: 10px;
+  
+  
+}
+.btn:hover{
+  opacity: 1;
+}
+textarea{
+  height: 200px;
+  border-radius: 4px;
+  margin-left:0px;
+  border: 1px solid lightgrey;
+}
+form{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+/* Hobbies */
+/*.hobbies{
+  text-align: left;
+  padding: 10px;
+}
+.foto{
+  width: 100%;
+  margin-top: 20px;
+}
+img{
+  border: 2px solid darkgrey;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-left:50px; 
+  padding: 10px;
+}
+i,h3{
+  display: inline;
+  margin-left: 1px;
+  
+  
+}
+.title{
+  color: white;
+  text-align: center;
+}
+​*/
+ 
