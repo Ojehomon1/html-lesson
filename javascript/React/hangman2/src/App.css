@@ -1,0 +1,13 @@
+body {
+  background-color:grey;
+}
+button{
+  background-color:#09d3ac;
+}
+.App {
+  text-align: center;
+}
+
+.gword {
+  letter-spacing: 1em;
+}
