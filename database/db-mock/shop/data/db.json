@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "id": 0,
+      "title": "Samsung Galaxy s10 Smartphone",
+      "price": 899
+    },
+    {
+      "id": 1,
+      "title": "Huawei Mate20 Smartphone",
+      "price": 379
+    },
+    {
+      "id": 3,
+      "title": "mate 30 ",
+      "price": "100.00"
+    },
+    {
+      "id": 7,
+      "title": "Samsung s10",
+      "price": "650"
+    },
+    {
+      "id": 8,
+      "title": "Sony erricson",
+      "price": "500"
+    },
+    {
+      "id": 9,
+      "title": "Sony erricson",
+      "price": "500"
+    },
+    {
+      "id": 10,
+      "title": " https://www.otto.de/p/samsung-galaxy-s10plus-smartphone-16-35-cm-6-4-zoll-128-gb-speicherplatz-12-mp-kamera-860811050/?variationId=860811053#variationId=860811053",
+      "price": "650"
+    },
+    {
+      "id": 11,
+      "title": "Samsung Galaxy s11 Smartphone",
+      "price": "650"
+    },
+    {
+      "id": 12,
+      "title": "mate 30",
+      "price": ""
+    }
+  ],
+  "count": 12,
+  "posts": [],
+  "user": {}
+}

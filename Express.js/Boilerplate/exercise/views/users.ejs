@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <title>Users</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1>The user is <%= userlist[9] %></h1>
+  <p id= 'users'></p>
+  
+  <script>
+      var list ='<%= userlist %>';
+      document.getElementById('users').innerHTML = list;
+  </script>
+
+</body>
+
+</html>

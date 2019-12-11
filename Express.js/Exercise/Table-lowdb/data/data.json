@@ -1,0 +1,29 @@
+{
+    "list" : [
+        {   "id": 1,
+            "firstname": "Robert",
+            "lastname": "Marley",
+            "age": 42,
+            "job": "designer"
+
+        },
+        {   "id": 2,
+            "name": "Mary",
+            "lastname": "Slessor",
+            "age": 37,
+            "job": "accountant"  
+        },
+        {   "id": 3,
+            "name": "James",
+            "lastname": "Bond",
+            "age": 45,
+            "job": "singer"  
+        },
+        {   "id": 4,
+            "name": "Jane",
+            "lastname": "Goodall",
+            "age": 60,
+            "job": "doctor"  
+          }
+    ]
+}
